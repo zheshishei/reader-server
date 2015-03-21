@@ -1,13 +1,3 @@
-FROM ubuntu
+FROM node:0.10-onbuild
 
-RUN apt-get update && apt-get install -y \
-    nodejs \
-    npm \
-    git \
-    git-core
-
-COPY start.sh /tmp/
-
-RUN chmod +x /tmp/start.sh
-
-CMD ./tmp/start.sh
+EXPOSE 5000

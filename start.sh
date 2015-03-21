@@ -9,4 +9,4 @@ cd reader-server
 
 npm install
 
-node server.js
+/usr/bin/node server.js
