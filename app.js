@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.get('/read', function(req, res){
 
   client.rpop('text_queue', function sendPoppedText (err, reply) {
-    res.status(200).send('hello world: ' + (reply || ''));
+    res.status(200).send((reply || ''));
   });
 
 });
