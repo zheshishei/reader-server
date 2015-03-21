@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
     git \
-    git-core \
+    git-core
 
 COPY start.sh /tmp/
 
